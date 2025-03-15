@@ -1,0 +1,113 @@
+.my-applications-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 20px auto;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.my-applications-heading {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.my-applications-job_seeker_card,
+.my-applications-employer_card {
+  display: flex;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1 1 48%;
+  text-align: left;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.my-applications-job_seeker_card:hover,
+.my-applications-employer_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease-in-out;
+}
+
+.my-applications-detail p {
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #495057;
+  text-align: left;
+  font-weight: bold;
+}
+
+.my-applications-detail span {
+  color: #007bff;
+}
+
+.my-applications-resume {
+  flex: 0.9;
+  text-align: right;
+  margin-right: 200px;
+}
+
+.my-applications-resume img {
+  max-width: 100%;
+  height: 150px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.my-applications-resume img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(100, 149, 237, 0.5);
+}
+
+.my-applications-delete-button {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-right: 50px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 200px;
+}
+
+.my-applications-delete-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}

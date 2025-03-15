@@ -1,0 +1,180 @@
+.contact-job {
+    margin-top: 15px;
+}
+
+.contact {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 300px;
+    padding: 20px;
+    width: 280px;
+    height: auto;
+    background-color: #34495e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.footer-column h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer-column a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-column a i {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover i,
+.footer-column a:hover {
+    color: #3498db;
+}
+
+.footer-column p {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-column p i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-column p i:hover {
+    color: #3498db;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a i {
+    font-size: 18px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: #3498db;
+}
+
+.newsletter-signup {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-signup input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.newsletter-signup textarea {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+.newsletter-signup textarea::placeholder {
+
+    line-height: 40px;
+
+}
+
+.newsletter-signup button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-signup button:hover {
+    background-color: #2980b9;
+}
+
+.contact-bottom {
+    border-top: 1px solid #34495e;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.contact-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-bottom a:hover {
+    color: #3498db;
+}
+
+.footer-menu {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer-menu a {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

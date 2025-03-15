@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo-job {
+  width: 95px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1050;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+  position: relative;
+
+}
+
+.nav-item:hover {
+  color: #007bff;
+}
+
+.nav-item:hover::after {
+  background-color: #007bff;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  color: #007bff
+}
+
+.nav-item.active::after {
+  background-color: #007bff;
+  height: 2px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+  background-color: white;
+  transition: color 0.3s ease;
+}
+
+.dropdown-toggle:focus {
+  outline: none;
+}
+
+.dropdown-toggle:hover {
+  color: #007bff;
+  text-decoration: none !important;
+}
+
+.dropdown-toggle::after {
+  content: ' ▼';
+  color: #007bff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+  border: 1px white;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.navbar-toggler {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler.open {
+  transform: rotate(90deg);
+}
+
+.dropdown-item button {
+  color: #333;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item button:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.dropdown-item button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.post-job-button {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.post-job-button i {
+  margin-left: 10px;
+}
+
+.post-job-button:hover {
+  background-color: #0056b3;
+  transition: transform 0.3s ease;
+}
+
+.post-job-button:focus {
+  outline: none;
+}
+
+.post-job-button:active {
+  background-color: #004085;
+  transition: transform 0.3s ease;
+}
